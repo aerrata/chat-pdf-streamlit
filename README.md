@@ -1,12 +1,12 @@
 <h1 align="center">
-📖KnowledgeGPT
+📖Chat PDF
 </h1>
 
 <div id="top" align="center">
 
-![GitHub](https://img.shields.io/github/license/mmz-001/knowledge_gpt)
-![GitHub Repo stars](https://img.shields.io/github/stars/mmz-001/knowledge_gpt?style=social)
-![GitHub forks](https://img.shields.io/github/forks/mmz-001/knowledge_gpt?style=social)
+![GitHub](https://img.shields.io/github/license/mmz-001/chat_pdf)
+![GitHub Repo stars](https://img.shields.io/github/stars/mmz-001/chat_pdf?style=social)
+![GitHub forks](https://img.shields.io/github/forks/mmz-001/chat_pdf?style=social)
 [![X (formerly Twitter) Follow](https://img.shields.io/twitter/follow/mm_sasmitha)](https://twitter.com/mm_sasmitha)
 
 </div>
@@ -30,8 +30,8 @@ Make sure you have Python ≥3.10 installed.
 1. Clone the repository
 
 ```bash
-git clone https://github.com/mmz-001/knowledge_gpt
-cd knowledge_gpt
+git clone https://github.com/mmz-001/chat_pdf
+cd chat_pdf
 ```
 
 2. Install dependencies with [Poetry](https://python-poetry.org/) and activate virtual environment
@@ -50,7 +50,7 @@ poetry shell
 4. Run the Streamlit server
 
 ```bash
-cd knowledge_gpt
+cd chat_pdf
 streamlit run main.py
 ```
 
@@ -59,9 +59,9 @@ streamlit run main.py
 Run the following commands to build and run the Docker image.
 
 ```bash
-cd knowledge_gpt
-docker build -t knowledge_gpt .
-docker run -p 8501:8501 knowledge_gpt
+cd chat_pdf
+docker build -t chat_pdf .
+docker run -p 8501:8501 chat_pdf
 ```
 
 Open http://localhost:8501 in your browser to access the app.
@@ -93,14 +93,14 @@ All contributions are welcome!
 
 Big thanks to the following people for their contributions!
 
-<a href="https://github.com/mmz-001/knowledge_gpt/graphs/contributors">
-  <img src="https://contrib.rocks/image?repo=mmz-001/knowledge_gpt" />
+<a href="https://github.com/mmz-001/chat_pdf/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=mmz-001/chat_pdf" />
 </a>
 
 ## License
 
-Distributed under the MIT License. See [LICENSE](https://github.com/mmz-001/knowledge_gpt/blob/main/LICENSE) for more information.
+Distributed under the MIT License. See [LICENSE](https://github.com/mmz-001/chat_pdf/blob/main/LICENSE) for more information.
 
 ## Star History
 
-[![Star History Chart](https://api.star-history.com/svg?repos=mmz-001/knowledge_gpt&type=Date)](https://star-history.com/#mmz-001/knowledge_gpt&Date)
+[![Star History Chart](https://api.star-history.com/svg?repos=mmz-001/chat_pdf&type=Date)](https://star-history.com/#mmz-001/chat_pdf&Date)

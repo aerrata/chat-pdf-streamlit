@@ -1,8 +1,8 @@
 import streamlit as st
 
-from knowledge_gpt.components.sidebar import sidebar
+from chat_pdf.components.sidebar import sidebar
 
-from knowledge_gpt.ui import (
+from chat_pdf.ui import (
     wrap_doc_in_html,
     is_query_valid,
     is_file_valid,
@@ -10,13 +10,13 @@ from knowledge_gpt.ui import (
     display_file_read_error,
 )
 
-from knowledge_gpt.core.caching import bootstrap_caching
+from chat_pdf.core.caching import bootstrap_caching
 
-from knowledge_gpt.core.parsing import read_file
-from knowledge_gpt.core.chunking import chunk_file
-from knowledge_gpt.core.embedding import embed_files
-from knowledge_gpt.core.qa import query_folder
-from knowledge_gpt.core.utils import get_llm
+from chat_pdf.core.parsing import read_file
+from chat_pdf.core.chunking import chunk_file
+from chat_pdf.core.embedding import embed_files
+from chat_pdf.core.qa import query_folder
+from chat_pdf.core.utils import get_llm
 
 
 EMBEDDING = "openai"
@@ -26,8 +26,8 @@ MODEL_LIST = ["gpt-3.5-turbo", "gpt-4"]
 # Uncomment to enable debug mode
 # MODEL_LIST.insert(0, "debug")
 
-st.set_page_config(page_title="KnowledgeGPT", page_icon="📖", layout="wide")
-st.header("📖KnowledgeGPT")
+st.set_page_config(page_title="Chat PDF", page_icon="📖", layout="wide")
+st.header("Chat PDF")
 
 # Enable caching for expensive functions
 bootstrap_caching()
@@ -37,11 +37,11 @@ sidebar()
 openai_api_key = st.session_state.get("OPENAI_API_KEY")
 
 
-if not openai_api_key:
-    st.warning(
-        "Enter your OpenAI API key in the sidebar. You can get a key at"
-        " https://platform.openai.com/account/api-keys."
-    )
+# if not openai_api_key:
+#     st.warning(
+#         "Enter your OpenAI API key in the sidebar. You can get a key at"
+#         " https://platform.openai.com/account/api-keys."
+#     )
 
 
 uploaded_file = st.file_uploader(

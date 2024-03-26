@@ -1,8 +1,8 @@
-from knowledge_gpt.core.embedding import FolderIndex, embed_files
+from chat_pdf.core.embedding import FolderIndex, embed_files
 from .fake_file import FakeFile
 from langchain.docstore.document import Document
-from knowledge_gpt.core.parsing import File
-from knowledge_gpt.core.debug import FakeVectorStore
+from chat_pdf.core.parsing import File
+from chat_pdf.core.debug import FakeVectorStore
 from typing import List
 
 

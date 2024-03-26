@@ -1,4 +1,4 @@
-from knowledge_gpt.core.parsing import File
+from chat_pdf.core.parsing import File
 from io import BytesIO
 
 
